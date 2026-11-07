@@ -1,0 +1,12 @@
+
+<h2>My Files</h2>
+
+{% for file in files %}
+    <p>
+        {{ file }}
+
+        <a href="/delete/{{ file }}">Delete</a>
+    </p>
+{% endfor %}
+
+<a href="/">Back</a>
